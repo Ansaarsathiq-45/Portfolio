@@ -18,9 +18,8 @@ This is a simple, responsive single-page website built using only **HTML**, **CS
 - JavaScript
 
 ## 📁 Project Structure
-/Portfolio
-│
-├── index.html # Main HTML file
-├── style.css # Main CSS styling
-├── main.js # JavaScript for interactivity (if any)
-└── README.md # Project info (this file)
+Portfolio/
+├── index.html # Main webpage
+├── style.css # Styling file
+├── main.js # Optional JavaScript
+├── README.md # Project documentation
