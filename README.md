@@ -1,9 +1,18 @@
-# 🌐 Personal Portfolio Website
+# 🌟 My Personal Portfolio
 
-This is my personal portfolio website built using **HTML**, **CSS**, and **JavaScript**.  
-It showcases my projects, skills, resume, and contact details in a clean and responsive layout.
+Welcome to my personal portfolio website! This site is designed to showcase my projects, skills, and contact details in a clean and professional format.
 
-## 🔧 Technologies Used
+## 📌 About
+This is a simple, responsive single-page website built using only **HTML**, **CSS**, and **JavaScript**. It features:
+
+- A white and blue minimal theme
+- Smooth scrolling and basic animations
+- Sections including: About, Projects, Resume, and Contact
+
+## 🚀 Live Website
+👉 [Visit my live portfolio](https://ansaarsathiq-45.github.io/Portfolio/)
+
+## 🛠️ Technologies Used
 - HTML5
 - CSS3
 - JavaScript
@@ -13,5 +22,5 @@ It showcases my projects, skills, resume, and contact details in a clean and res
 │
 ├── index.html # Main HTML file
 ├── style.css # Main CSS styling
-├── script.js # JavaScript for interactivity (if any)
+├── main.js # JavaScript for interactivity (if any)
 └── README.md # Project info (this file)
