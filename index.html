@@ -319,5 +319,23 @@
             </div>
         </div>
     </footer>
+    <script>
+  const menuToggle = document.getElementById("menu-toggle");
+  const navList = document.querySelector(".nav-list");
+
+  menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    navList.classList.toggle("active");
+  });
+
+  // Close menu when clicking a link (optional but good UX)
+  document.querySelectorAll(".nav-link").forEach(link =>
+    link.addEventListener("click", () => {
+      menuToggle.classList.remove("active");
+      navList.classList.remove("active");
+    })
+  );
+</script>
+
 </body>
 </html>
