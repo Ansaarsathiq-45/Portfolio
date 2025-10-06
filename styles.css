@@ -42,13 +42,17 @@ body {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: flex;
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
   }
 
   .nav-list {
-    position: absolute;
-    top: 70px; /* below header */
+    position: fixed; /* fix position instead of absolute */
+    top: 70px; /* height of your header */
     left: 0;
     width: 100%;
     background: #ffffff;
@@ -57,7 +61,7 @@ body {
     gap: 1.5rem;
     padding: 1.5rem 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: none; /* hidden by default */
+    display: none;
     z-index: 999;
   }
 
@@ -66,32 +70,11 @@ body {
     animation: fadeInDown 0.4s ease;
   }
 
-  /* Animation for dropdown */
-  @keyframes fadeInDown {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Toggle animation for hamburger icon */
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translateY(8px);
-  }
-
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translateY(-8px);
+  /* Ensure hero content doesn't hide behind header */
+  .hero {
+    padding-top: 140px; /* adjust if needed */
   }
 }
-
 
 .header {
     background-color: #ffffff;
