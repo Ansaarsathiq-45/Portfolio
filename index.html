@@ -339,23 +339,24 @@
             </div>
         </div>
     </footer>
-    <script>
+   <script>
   const menuToggle = document.getElementById("menu-toggle");
   const navList = document.querySelector(".nav-list");
 
   menuToggle.addEventListener("click", () => {
-    menuToggle.classList.toggle("active");
-    navList.classList.toggle("active");
+    navList.classList.toggle("active"); // toggle nav visibility
+    menuToggle.classList.toggle("active"); // optional: toggle animation
   });
 
   // Close menu when clicking a link (optional but good UX)
-  document.querySelectorAll(".nav-link").forEach(link =>
+  document.querySelectorAll(".nav-link").forEach(link => {
     link.addEventListener("click", () => {
-      menuToggle.classList.remove("active");
-      navList.classList.remove("active");
-    })
-  );
+      navList.classList.remove("active"); // hide nav
+      menuToggle.classList.remove("active"); // reset toggle animation
+    });
+  });
 </script>
+
 
 </body>
 </html>
