@@ -645,16 +645,23 @@ section {
 }
 
 /* Certificates Section */
-.section-title {
-  color: #0044cc; /* Blue */
-  position: relative;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 20px;
+
+/* ===== Certificates Section ===== */
+.certificates {
+  background-color: #f9f9f9;
+  padding: 80px 0;
 }
 
-.section-title::after {
+.certificates .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #0044cc; /* Blue heading */
+  font-weight: 700;
+  position: relative;
+}
+
+.certificates .section-title::after {
   content: "";
   display: block;
   width: 60px;
@@ -664,3 +671,35 @@ section {
   border-radius: 3px;
 }
 
+.certificate-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.certificate-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.certificate-title {
+  font-size: 1.4rem;
+  color: #0044cc; /* Blue title color */
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.certificate-institution {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.certificate-description {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
